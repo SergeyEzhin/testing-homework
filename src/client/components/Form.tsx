@@ -57,6 +57,7 @@ export const Form: React.FC<FormProps> = ({ onSubmit }) => {
                 <input
                     id="f-name"
                     type="text"
+                    data-testid="name-field"
                     disabled={sent}
                     className={bem("Field", { type: 'name' }, [getControlClass(nameIsValid, submitted)])}
                     autoComplete="off"
@@ -68,6 +69,7 @@ export const Form: React.FC<FormProps> = ({ onSubmit }) => {
                 <input
                     id="f-phone"
                     type="text"
+                    data-testid="phone-field"
                     disabled={sent}
                     className={bem("Field", { type: 'phone' }, [getControlClass(phoneIsValid, submitted)] )}
                     onChange={onChangePhone} />
@@ -78,6 +80,7 @@ export const Form: React.FC<FormProps> = ({ onSubmit }) => {
                 <textarea
                     id="f-address"
                     disabled={sent}
+                    data-testid="address-field"
                     rows={3}
                     className={bem("Field", { type: 'address' }, [getControlClass(addressIsValid, submitted)] )}
                     onChange={onChangeAddress}></textarea>

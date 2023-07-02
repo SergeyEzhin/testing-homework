@@ -6,7 +6,7 @@ const bem = cn('Home');
 
 export const Home: React.FC = () => {
     return (
-        <div className={bem()}>
+        <div data-testid="home-page" className={bem()}>
             <Helmet title="Welcome" />
             <div className="row">
                 <div className="col bg-secondary text-white py-4 bg-opacity-75">

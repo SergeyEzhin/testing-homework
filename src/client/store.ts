@@ -63,7 +63,7 @@ function createRootReducer(state: Partial<ApplicationState>) {
 
                 if (process.env.BUG_ID !== '7') {
                     if (!draft.cart[id]) {
-                        draft.cart[id] = { name, count: 0, price };
+                        draft.cart[id] = { name, count: 1, price };
                     }
 
                     draft.cart[id].count++;

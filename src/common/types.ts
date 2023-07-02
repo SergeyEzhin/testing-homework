@@ -22,7 +22,7 @@ export interface CartItem {
     count: number;
 }
 
-export type CartState = Record<number, CartItem>;
+export type CartState = Record<string, CartItem>;
 
 export interface Order {
     form: CheckoutFormData;

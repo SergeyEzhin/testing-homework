@@ -1,5 +1,6 @@
 import express from 'express';
 import { router } from './routes';
+require('dotenv').config()
 
 const port = Number(process.env.PORT) || 3000;
 const basename = '/hw/store';
